@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Classificador</title>
+    <link href="./css/style.css" rel="stylesheet">
+</head>
+<body>
+    <div>
+        <img src="https://source.unsplash.com/300x300/?dog" height="300" id="imagemFonte">
+    </div>
+    <div>
+        <input type="file" onchange="updateImage()">
+    </div>
+    <div>
+        <button onclick="classificar()">Classificar</button>
+    </div>
+
+    <div id="resultados">
+        <p>Raça: ??? || Probabilidade: ???</p>
+        <p>Raça: ??? || Probabilidade: ???</p>
+        <p>Raça: ??? || Probabilidade: ???</p>
+    </div>
+    <script src="https://unpkg.com/@tensorflow/tfjs"></script>
+    <script src="https://unpkg.com/@tensorflow-models/mobilenet"></script>
+    <script src="./js/script.js"></script>
+</body>
+</html>
